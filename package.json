@@ -8,7 +8,8 @@
     "start": "npm run build && fastify start -l info dist/index.js"
   },
   "dependencies": {
-    "@autotelic/fastify-opentelemetry": "^0.22.0",
+    "@autotelic/fastify-opentelemetry": "file:.yalc/@autotelic/fastify-opentelemetry",
+    "@opentelemetry/api": "^1.9.0",
     "fastify": "^5.2.1",
     "fastify-cli": "^7.3.0",
     "fastify-opentelemetry\"": "link:\"@autotelic/fastify-opentelemetry\"",

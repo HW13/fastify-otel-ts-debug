@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "@autotelic/fastify-opentelemetry": {
+      "signature": "d3f315092f3ebfa31022e0655cb8ec85",
+      "file": true,
+      "replaced": "^0.22.0"
+    }
+  }
+}

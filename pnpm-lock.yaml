@@ -9,8 +9,11 @@ importers:
   .:
     dependencies:
       '@autotelic/fastify-opentelemetry':
-        specifier: ^0.22.0
-        version: 0.22.0(@opentelemetry/api@1.9.0)
+        specifier: file:.yalc/@autotelic/fastify-opentelemetry
+        version: file:.yalc/@autotelic/fastify-opentelemetry(@opentelemetry/api@1.9.0)
+      '@opentelemetry/api':
+        specifier: ^1.9.0
+        version: 1.9.0
       fastify:
         specifier: ^5.2.1
         version: 5.2.1
@@ -36,8 +39,8 @@ importers:
 
 packages:
 
-  '@autotelic/fastify-opentelemetry@0.22.0':
-    resolution: {integrity: sha512-2CQ6jKRFHEhncf+37wFtqnL6R7s5c+aWlNm3QT6X+873m8FwM87kKTM8gtp5VGalCs5FTDcQJHcAVyatZPdhAA==}
+  '@autotelic/fastify-opentelemetry@file:.yalc/@autotelic/fastify-opentelemetry':
+    resolution: {directory: .yalc/@autotelic/fastify-opentelemetry, type: directory}
     engines: {node: '>=18'}
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
@@ -449,7 +452,7 @@ packages:
 
 snapshots:
 
-  '@autotelic/fastify-opentelemetry@0.22.0(@opentelemetry/api@1.9.0)':
+  '@autotelic/fastify-opentelemetry@file:.yalc/@autotelic/fastify-opentelemetry(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
       fastify-plugin: 5.0.1
